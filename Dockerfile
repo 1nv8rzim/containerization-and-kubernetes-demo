@@ -13,8 +13,8 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Copy the rest of the application code
 COPY ./app/. /app
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+# Make port 80 available to the world outside this container
+EXPOSE 80
 
 # Run the command to start the app
 CMD ["python", "main.py"]
